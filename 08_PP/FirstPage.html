@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.container {
+            width: 100%;
+            border: 1px solid gray;
+        }
+        header {
+            padding: 2em;
+            color: white;
+            background-color: rgb(196, 161, 241);
+            clear: left;
+            text-align: center;
+        }
+        footer {
+            padding: 1em;
+            color: white;
+            background-color: rgb(255, 129, 26);
+            clear: left;
+            text-align: center;
+        }
+        nav{ 
+            float: left; 
+            width: 155px; 
+            margin-right:1em;
+        }
+
+        article {
+            margin-top: 10px;
+            margin-left: 170px;
+            border: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+        .clock {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+        .article-image {
+            width: 30%;
+            height: auto;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            margin: auto;
+            display: block;
+
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            margin: 1em;
+        }
+
+    </style>
+    <title>PP Page jaaaaaaa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id=h1>Welcome to PP page jaaa</h1>
+        <div class="clock" id="clock"></div>
+    </header>
+    <nav>
+        <ul>
+<li><a href="#h1">Home</a></li>
+<li><a href="SecondPage.html">My favorite place</a></li>
+<li><a href="http://www.kosen.kmitl.ac.th/en">KOSEN-KMITL</a></li>
+        </ul>
+    </nav>
+    <article>
+        <img src="20240831_145506.jpg" alt="Your Image" class="article-image">
+        <h2>Jukkit Lorthirathorn (PP)</h2>
+        <p>My home: Saothong Hin, Bangyai, Nonthaburi</p>
+        <p>My Old School: Pramaesakonsongkroh school, Princess Chulabhorn Science High School Pathumthani, KOSEN-KMITL</p>
+        <p>My lil homie(นกแก้ว): Gucci</p>
+        <p>My Gang: Pun Nay Bun Pha Neo Tan Ohm Worm </p>
+        <p>My bro(cousins): Phoommy Pluemjai</p>
+    <a href=#h1>Go to top</a>
+    </article>
+    <footer>Copyright &copy; KOSEN-KMITL.ac.th</footer>
+
+
+    <script>
+        function updateClock() {
+            const clockElement = document.getElementById('clock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // initial call to display clock immediately
+    </script>
+</body>
+</html>
